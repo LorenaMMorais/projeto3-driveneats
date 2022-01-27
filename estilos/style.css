@@ -1,0 +1,206 @@
+/* fonte necessárias:
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+.body{
+    width: 414px;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+
+/*Barra Topo*/
+
+header{
+    position: fixed;
+    width: 414px;
+    height: 92px;
+    margin: 0px auto;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding-left: 20px;
+    background-color: #cf2b2b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+header h1{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #ffffff;
+}
+header h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/*Seleção de pedidos*/
+
+main{
+    width: 414px;
+    background-color: #e5e5e5;
+    padding-top: 123px;
+    padding-left: 19px; 
+    margin: 0px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.escolha-prato{
+    margin-bottom: 27px;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divisão h1{
+    margin-bottom: 17px;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+.nav-opcoes{
+    width: 100%;
+    margin: 0px auto;
+    padding-right: 19px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-opcoes::-webkit-scrollbar {
+    display: none;
+    }
+.nav-opcoes h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.nav-opcoes p{
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.nav-opcoes h3{
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.opcoes-prato{
+    width: 172px;
+    height: 216px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.opcoes-prato img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.opcoes p{
+    margin-bottom: 10px;
+}
+.escolha-bebida{
+    margin: 0px auto;
+    margin-bottom: 27px;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.escolha-sobremesa{
+    margin: 0px auto;
+    margin-bottom: 16px;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opcoes{
+    width: 172px;
+    height: 216px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.opcoes img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/*Barra inferior*/
+
+footer{
+    display: block;
+    margin: 0 auto;
+    width: 414px;
+    height: 92px;
+    z-index: 2;
+}
+.selecionando{
+    width: 414px;
+    height: 92px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    background: #FFFFFF;
+}
+.selecao{
+    position: fixed;
+    padding-top: 5px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+}
+.selecao p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
