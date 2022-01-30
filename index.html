@@ -16,78 +16,118 @@
             <h2>Sua comida em 6 minutos</h2>
         </header>
         <main>
-            <section class="escolha-prato">
-                <div class="divisão"> 
+            <section class="escolha">
                     <h1>Primeiro, seu prato</h1>
-                </div>
                 <div class="nav-opcoes">
-                    <div class="opcoes-prato">
+                    <div class="prato" data-identifier="food-option">
                         <img src="imagens/frango_yin_yang.png">
-                        <h2>Frango Yin Yang</h2>
-                        <p>Um pouco de batata,<br/>um pouco de salada</p>
-                        <h3>R$ 14,90</h3>
+                        <div class="titulo">Frango Yin Yang</div>
+                        <div class="descricao">Um pouco de batata, um pouco de salada</div>
+                        <div class="preco">R$ 14,90</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes-prato">
-                        <img src="imagens/frango_yin_yang.png">
-                        <h2>Frango Yin Yang</h2>
-                        <p>Um pouco de batata,<br/>um pouco de salada</p>
-                        <h3>R$ 14,90</h3>
+                    <div class="prato" data-identifier="food-option">
+                        <img src="imagens/bife-acebolado.jpg">
+                        <div class="titulo">Bife Acebolado</div>
+                        <div class="descricao">Arroz, feijão, macarrão e salada</div>
+                        <div class="preco">R$ 16,90</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes-prato">
-                        <img src="imagens/frango_yin_yang.png">
-                        <h2>Frango Yin Yang</h2>
-                        <p>Um pouco de batata,<br/>um pouco de salada</p>
-                        <h3>R$ 14,90</h3>
+                    <div class="prato" data-identifier="food-option">
+                        <img src="imagens/frango-na-chapa.jpg">
+                        <div class="titulo">Frango na Chapa</div>
+                        <div class="descricao">Arroz, batatas e salada</div>
+                        <div class="preco">R$ 15,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="prato" data-identifier="food-option">
+                        <img src="imagens/arroz-paraense.jpg">
+                        <div class="titulo">Arroz Paraense</div>
+                        <div class="descricao">Arroz com camarões e folhas de jambú</div>
+                        <div class="preco">R$ 18,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="escolha-bebida">
-                <div class="divisão"> 
+            <section class="escolha">
                     <h1>Agora, sua bebida</h1>
-                </div>
                 <div class="nav-opcoes">
-                    <div class="opcoes">
+                    <div class="bebida" data-identifier="food-option">
                         <img src="imagens/coquinha_gelada.png">
-                        <h2>Coquinha gelada</h2>
-                        <p>Lata 350ml</p>
-                        <h3>R$ 4,90</h3>
+                        <div class="titulo">Coquinha gelada</div>
+                        <div class="descricao">Lata 350ml</div>
+                        <div class="preco">R$ 4,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes">
-                        <img src="imagens/coquinha_gelada.png">
-                        <h2>Coquinha gelada</h2>
-                        <p>Lata 350ml</p>
-                        <h3>R$ 4,90</h3>
+                    <div class="bebida" data-identifier="food-option">
+                        <img src="imagens/suco-de-laranja.png">
+                        <div class="titulo">Suco de Laranja</div>
+                        <div class="descricao">Copo 500ml</div>
+                        <div class="preco">R$ 3,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes">
-                        <img src="imagens/coquinha_gelada.png">
-                        <h2>Coquinha gelada</h2>
-                        <p>Lata 350ml</p>
-                        <h3>R$ 4,90</h3>
+                    <div class="bebida" data-identifier="food-option">
+                        <img src="imagens/suco-de-cupuaçú.jpg">
+                        <div class="titulo">Suco de Cupuaçú</div>
+                        <div class="descricao">Copo 500ml</div>
+                        <div class="preco">R$ 5,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="bebida" data-identifier="food-option">
+                        <img src="imagens/agua-mineral.jpg">
+                        <div class="titulo">Água Mineral</div>
+                        <div class="descricao">garrafa 500ml</div>
+                        <div class="preco">R$ 3,00</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
+            </div>
             </section>
-            <section class="escolha-sobremesa">
-                <div class="divisão"> 
+            <section class="escolha">
                     <h1>Por fim, sua sobremesa</h1>
-                </div>
                 <div class="nav-opcoes">
-                    <div class="opcoes">
+                    <div class="sobremesa" data-identifier="food-option">
                         <img src="imagens/pudim.png">
-                        <h2>Pudim</h2>
-                        <p>Apenas pudim</p>
-                        <h3>R$ 7,90</h3>
+                        <div class="titulo">Pudim</div>
+                        <div class="descricao">Apenas pudim</div>
+                        <div class="preco">R$ 4,50</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes">
-                        <img src="imagens/pudim.png">
-                        <h2>Pudim</h2>
-                        <p>Apenas pudim</p>
-                        <h3>R$ 7,90</h3>
+                    <div class="sobremesa" data-identifier="food-option">
+                        <img src="imagens/petit-gateau.jpeg">
+                        <div class="titulo">Petit Gateau</div>
+                        <div class="descricao">Com sorvete</div>
+                        <div class="preco">R$ 10,50</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
-                    <div class="opcoes">
-                        <img src="imagens/pudim.png">
-                        <h2>Pudim</h2>
-                        <p>Apenas pudim</p>
-                        <h3>R$ 7,90</h3>
+                    <div class="sobremesa" data-identifier="food-option">
+                        <img src="imagens/mousse-de-cupuaçu.jpg">
+                        <div class="titulo">Mousse de Cupuaçú</div>
+                        <div class="descricao">Apenas Mousse</div>
+                        <div class="preco">R$ 4,90</div>
+                        <div class="icone-escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -95,17 +135,10 @@
         <footer>
             <div class="selecionando">
                 <div class="selecao">
-                    <p>Selecione os 3 itens<br/>para fechar o pedido</p>
+                    <button ><p>Selecione os 3 itens<br/>para fechar o pedido</p></button>
                 </div>
             </div>
-            <!--
-            <div class="finalizando">
-                <button class="finalizar-selecao">
-                    <p>Fechar pedido</p>
-                </button>
-            </div>-->
         </footer>
-
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="estilos/script.js"></script>
     </body>

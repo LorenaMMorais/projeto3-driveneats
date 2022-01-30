@@ -55,14 +55,15 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
-.escolha-prato{
+.escolha{
+    margin: 0px auto;
     margin-bottom: 27px;
     width: 414px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.divisão h1{
+.escolha h1{
     margin-bottom: 17px;
     font-family: 'Righteous', cursive;
     font-style: normal;
@@ -82,15 +83,72 @@ main{
 }
 .nav-opcoes::-webkit-scrollbar {
     display: none;
-    }
-.nav-opcoes h2{
+}
+.prato{
+    width: 172px;
+    height: 216px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.prato img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.bebida p{
+    margin-bottom: 10px;
+}
+.bebida{
+    width: 172px;
+    height: 216px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.bebida img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.sobremesa p{
+    margin-bottom: 10px;
+}
+.sobremesa{
+    width: 172px;
+    height: 216px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.sobremesa img{
+    width: 144px;
+    height: 82px;
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+.titulo{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #333333;
 }
-.nav-opcoes p{
+.descricao{
     margin-top: 4px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -98,7 +156,7 @@ main{
     line-height: 18px;
     color: #A6A6A6;
 }
-.nav-opcoes h3{
+.preco{
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -106,60 +164,6 @@ main{
     line-height: 19px;
     color: #000000;
 }
-.opcoes-prato{
-    width: 172px;
-    height: 216px;
-    padding-top: 18px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-right: 16px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-}
-.opcoes-prato img{
-    width: 144px;
-    height: 87px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-.opcoes p{
-    margin-bottom: 10px;
-}
-.escolha-bebida{
-    margin: 0px auto;
-    margin-bottom: 27px;
-    width: 414px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.escolha-sobremesa{
-    margin: 0px auto;
-    margin-bottom: 16px;
-    width: 414px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.opcoes{
-    width: 172px;
-    height: 216px;
-    padding-top: 18px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-right: 16px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-}
-.opcoes img{
-    width: 144px;
-    height: 87px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
 /*Barra inferior*/
 
 footer{
@@ -184,18 +188,19 @@ footer{
     z-index: 2;
     background: #FFFFFF;
 }
-.selecao{
-    position: fixed;
+.selecao button{
+    position: relative;
     padding-top: 5px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     width: 364px;
     height: 61px;
+    border:0px;
     background: #CBCBCB;
     border-radius: 50px;
 }
-.selecao p{
+.selecao button p{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -203,4 +208,13 @@ footer{
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+}
+.escondido{
+    display: none;
+}
+.icoone-escondido{
+    display: none;
+}
+.icone-escondido ion-icon{
+    display: none;
 }
