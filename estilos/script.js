@@ -13,6 +13,7 @@ function selecionarPrato(opcaoComida) {
   opcaoComida.classList.add("selecionado");
   opcaoComida.getElementsByTagName("img")[1].classList.remove("escondido") 
   comidaEscolhida = opcaoComida;
+  finalizarSelecao();
 }
 
 //seleção de bebidas
@@ -25,6 +26,7 @@ function selecionarBebida(opcaoBebida) {
   opcaoBebida.classList.add("selecionado");
   opcaoBebida.getElementsByTagName("img")[1].classList.remove("escondido") 
   bebidaEscolhida = opcaoBebida;
+  finalizarSelecao();
 }
 
 //seleção de sobremesas
@@ -37,5 +39,14 @@ function selecionarSobremesa(opcaoSobremesa) {
   opcaoSobremesa.classList.add("selecionado");
   opcaoSobremesa.getElementsByTagName("img")[1].classList.remove("escondido") 
   sobremesaEscolhida = opcaoSobremesa;
+  finalizarSelecao();
 }
 
+//Liberar botão de finaizar
+function finalizarSelecao() {
+  if(comidaEscolhida !== null && bebidaEscolhida !== null && sobremesaEscolhida !== null){
+    document.querySelector(".finalizar").classList.remove("escondido");
+  }
+}
+
+//Resumo do pedido
