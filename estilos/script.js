@@ -1,18 +1,41 @@
-function selecionarPrato() {
-    
-}
+let comidaEscolhida = null, bebidaEscolhida = null, sobremesaEscolhida = null;
+let precoComida, precoBebida, precoSobremesa, precoTotal;
+let nomeComida, nomeBebida, nomeSobremesa;
 
 
-function selecionar() {
-    const selecaoPrato;
-    const selecaoBebida;
-    const selecaoSobremesa;
-    /*if(){
-        const finalizar = document.querySelector(".selecionando");
-        finalizar.innerHTML = "Fechar pedido";
-    }
-*/
+//seleção de comidas
+function selecionarPrato(opcaoComida) {
+  if(comidaEscolhida !== null) {
+    comidaEscolhida.classList.remove("selecionado");
+    comidaEscolhida.getElementsByTagName("img")[1].classList.add("escondido");
+  }
+ 
+  opcaoComida.classList.add("selecionado");
+  opcaoComida.getElementsByTagName("img")[1].classList.remove("escondido") 
+  comidaEscolhida = opcaoComida;
 }
-function somarItensSelecionados(){
 
+//seleção de bebidas
+function selecionarBebida(opcaoBebida) {
+  if(bebidaEscolhida !== null) {
+    bebidaEscolhida.classList.remove("selecionado");
+    bebidaEscolhida.getElementsByTagName("img")[1].classList.add("escondido");
+  }
+
+  opcaoBebida.classList.add("selecionado");
+  opcaoBebida.getElementsByTagName("img")[1].classList.remove("escondido") 
+  bebidaEscolhida = opcaoBebida;
 }
+
+//seleção de sobremesas
+function selecionarSobremesa(opcaoSobremesa) {
+  if(sobremesaEscolhida !== null) {
+    sobremesaEscolhida.classList.remove("selecionado");
+    sobremesaEscolhida.getElementsByTagName("img")[1].classList.add("escondido");
+  }
+
+  opcaoSobremesa.classList.add("selecionado");
+  opcaoSobremesa.getElementsByTagName("img")[1].classList.remove("escondido") 
+  sobremesaEscolhida = opcaoSobremesa;
+}
+
